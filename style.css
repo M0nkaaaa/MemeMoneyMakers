@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #00001d, #2a2a55);
+  color: white;
+}
+
+.corner-img {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.hero-banner {
+  border: 4px solid white;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.maga_siyay {
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.maga_siyay:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.levels-wrapper {
+  max-width: 100%;
+  border: 4px solid #00ffff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1300px;
+  background-color: #111133;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  overflow-x: auto;
+}
+
+
+.levels {
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+  flex-wrap: nowrap; 
+}
+
+.level {
+  background: black;
+  border: 3px solid #3333ff;
+  border-radius: 15px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.level:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.level-title {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #00ffff;
+}
+
+.level img {
+  width: 100px;
+  height: auto;
+}
+
+.level .text {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.handwritten-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #00ffff;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 30px;
+}
+
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.level {
+  flex: 0 1 30%; 
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 1102px) {
+  .level {
+    flex: 0 1 45%;
+  }
+}
+
+
+@media (max-width: 726px) {
+  .level {
+    flex: 0 1 100%;
+  }
+}
+
+.knowledge-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.knowledge-item {
+  display: block;
+  background-color: #1a1a33;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.knowledge-item h4 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.knowledge-item p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 0;
+}
+
+.knowledge-item:hover {
+  background-color: #22224d;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00ffff;
+}
+
